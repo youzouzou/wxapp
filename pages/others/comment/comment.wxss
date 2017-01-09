@@ -1,0 +1,47 @@
+order_comment_bg {
+  overflow: scroll;
+  background: #efeff4;
+}
+
+.order_comment_item {
+  padding: 30rpx 0;
+  margin: 0 0 0 30rpx;
+}
+
+.order_comment_img {
+  width: 134rpx;
+  height: 134rpx;
+  border: 1px solid #e5e5e5;
+}
+
+.order_comment_content {
+  padding-bottom: 16rpx;
+}
+
+.order_comment_textarea_box {
+  margin-left: 20rpx;
+}
+
+.order_comment_textarea {
+  font-size: 30rpx;
+}
+
+.order_comment_type {
+  padding: 12rpx 30rpx 0 0;
+}
+
+.order_comment_type_default, .order_comment_type_selected {
+    font-size:30rpx;
+    margin-left:10rpx;
+}
+.order_comment_type_default{
+    color: #888888;
+}
+
+.order_comment_type_selected{
+    color: #000000;
+}
+.commnet_btn_box{
+    width:90%;
+    margin:20rpx 5%;
+}

@@ -12,6 +12,12 @@ Page({
                 name: '抽屉层',
                 open: false,
                 pages: ['drawer']
+            },
+            {
+                id: 'comment',
+                name: '订单评价',
+                open: false,
+                pages: ['comment']
             }
         ]
     },

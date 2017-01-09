@@ -2,6 +2,7 @@
   "pages": [
     "pages/others/others",
     "pages/others/drawer/drawer",
+    "pages/others/comment/comment",
     "pages/others/marquee/marquee",
     "pages/example/index",
     "pages/example/button/button",

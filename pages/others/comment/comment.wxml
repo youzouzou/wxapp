@@ -1,0 +1,46 @@
+ <form bindsubmit="submitComment">
+  <view class="order_comment_bg">
+    <view wx:for="{{commentList}}" style="background:#fff;">
+      <view class="order_comment_item">
+        <view class="weui-flex order_comment_content bottom_border">
+          <view>
+            <view class="placeholder">
+              <image src="{{item.commodityIcon}}" class="order_comment_img"></image>
+            </view>
+          </view>
+          <view class="weui-flex__item order_comment_textarea_box">
+            <view class="placeholder">
+              <textarea class="weui-textarea order_comment_textarea" bindblur="saveContent" placeholder="写评论" name="content_{{index}}" data-index="{{index}}" value="{{item.content}}" auto-height />
+            </view>
+          </view>
+        </view>
+        <view>
+          <view class="weui-flex order_comment_type">
+            <view class="weui-flex__item">
+              <view class="placeholder" bindtap="selectCommentType" data-index="{{index}}" data-type="GOOD">
+                <image src="{{item.commentType=='GOOD'?'/images/icon_good_select.png':'/images/icon_good.png'}}" style="width:30rpx;height:30rpx;"></image>
+                <text class="{{item.commentType=='GOOD'?'order_comment_type_selected':'order_comment_type_default'}}">好评</text>
+              </view>
+            </view>
+            <view class="weui-flex__item" style="text-align:center;">
+              <view class="placeholder" bindtap="selectCommentType" data-index="{{index}}" data-type="NOTBAD">
+                <image src="{{item.commentType=='NOTBAD'?'/images/icon_middle_select.png':'/images/icon_middle.png'}}" style="width:30rpx;height:30rpx;"></image>
+                <text class="{{item.commentType=='NOTBAD'?'order_comment_type_selected':'order_comment_type_default'}}">中评</text>
+              </view>
+            </view>
+            <view class="weui-flex__item" style="text-align:right;">
+              <view class="placeholder" bindtap="selectCommentType" data-index="{{index}}" data-type="BAD">
+                <image src="{{item.commentType=='BAD'?'/images/icon_bad_select.png':'/images/icon_bad.png'}}" style="width:30rpx;height:30rpx;"></image>
+                <text class="{{item.commentType=='BAD'?'order_comment_type_selected':'order_comment_type_default'}}">差评</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+    <view class="commnet_btn_box">
+      <button class="weui-btn" style="background:#158447;font-size:30rpx;padding:10rpx 0;" type="primary" formType="submit">确定</button>
+    </view>
+  </view>
+</form>
