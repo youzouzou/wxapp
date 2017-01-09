@@ -1,0 +1,27 @@
+<view class="title">1 显示完后再显示</view>
+<view class="example">
+  <view class="marquee_box">
+    <view class="marquee_text" style="{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;">
+      {{text}}
+    </view>
+  </view>
+</view>
+<view class="title">2 出现白边后即显示</view>
+<view class="example">
+  <view class="marquee_box">
+    <view class="marquee_text" style="{{orientation}}:{{marqueeDistance2}}px;font-size: {{size}}px;">
+      <text>{{text}}</text>
+      <text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{text}}</text>
+    </view>
+  </view>
+</view>
+<view class="marquee_panel">
+ <view>
+  <view>配置参数说明</view>
+  <view>size：文字大小</view>
+  <view>marqueePace：滚动速度</view>
+  <view>interval：滚动时间间隔</view>
+  <view>orientation：滚动方向</view>
+  <view>marquee2_margin：2的白边长度</view>
+ </view>
+</view>

@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/others/others",
+    "pages/others/marquee/marquee",
+    "pages/example/index",
+    "pages/example/button/button",
+    "pages/example/list/list",
+    "pages/example/input/input",
+    "pages/example/slider/slider",
+    "pages/example/uploader/uploader",
+    "pages/example/article/article",
+    "pages/example/badge/badge",
+    "pages/example/flex/flex",
+    "pages/example/footer/footer",
+    "pages/example/gallery/gallery",
+    "pages/example/grid/grid",
+    "pages/example/icons/icons",
+    "pages/example/loadmore/loadmore",
+    "pages/example/panel/panel",
+    "pages/example/preview/preview",
+    "pages/example/progress/progress",
+    "pages/example/actionsheet/actionsheet",
+    "pages/example/dialog/dialog",
+    "pages/example/msg/msg",
+    "pages/example/msg/msg_success",
+    "pages/example/msg/msg_fail",
+    "pages/example/picker/picker",
+    "pages/example/toast/toast",
+    "pages/example/navbar/navbar",
+    "pages/example/tabbar/tabbar",
+    "pages/example/searchbar/searchbar"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "WeUI for 小程序",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/others/others",
+        "text": "自定义组件",
+        "iconPath": "images/icon_classify.png",
+        "selectedIconPath": "images/icon_classify_select.png"
+      },
+      {
+        "pagePath": "pages/example/index",
+        "text": "WEUI",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_select.png"
+      }
+    ],
+    "color": "#c6c6c6",
+    "selectedColor": "green",
+    "backgroundColor": "#f7f7fa",
+    "borderStyle": "white",
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
