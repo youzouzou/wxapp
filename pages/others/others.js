@@ -6,6 +6,12 @@ Page({
                 name: '文字跑马灯',
                 open: false,
                 pages: ['marquee']
+            },
+            {
+                id: 'drawer',
+                name: '抽屉层',
+                open: false,
+                pages: ['drawer']
             }
         ]
     },

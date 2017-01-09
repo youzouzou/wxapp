@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/others/others",
+    "pages/others/drawer/drawer",
     "pages/others/marquee/marquee",
     "pages/example/index",
     "pages/example/button/button",

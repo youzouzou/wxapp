@@ -37,3 +37,9 @@ page {
   text-align: left;
   font-size: 14px;
 }
+
+/*自定义公共样式*/
+
+.text_center {
+  text-align: center;
+}
