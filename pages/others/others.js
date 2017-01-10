@@ -18,6 +18,12 @@ Page({
                 name: '订单评价',
                 open: false,
                 pages: ['comment']
+            },
+            {
+                id: 'richcontent',
+                name: '富文本解析',
+                open: false,
+                pages: ['richcontent']
             }
         ]
     },

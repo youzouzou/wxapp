@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/others/others",
+    "pages/others/richcontent/richcontent",
     "pages/others/drawer/drawer",
     "pages/others/comment/comment",
     "pages/others/marquee/marquee",
@@ -34,7 +35,7 @@
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "WeUI for 小程序",
+    "navigationBarTitleText": "小程序组件",
     "navigationBarBackgroundColor": "#f8f8f8",
     "backgroundColor": "#f8f8f8",
     "backgroundTextStyle": "light",

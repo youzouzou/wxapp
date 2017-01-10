@@ -51,3 +51,7 @@
 .kind-list__item-bd_show {
   height: auto;
 }
+.page__ft{
+  font-size:26rpx;
+  color:#ccc;
+}
