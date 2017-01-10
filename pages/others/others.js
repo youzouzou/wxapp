@@ -24,6 +24,12 @@ Page({
                 name: '富文本解析',
                 open: false,
                 pages: ['richcontent']
+            },
+            {
+                id: 'lefttab',
+                name: '左側菜單',
+                open: false,
+                pages: ['lefttab']
             }
         ]
     },

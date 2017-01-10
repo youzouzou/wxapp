@@ -1,0 +1,76 @@
+Page {
+  background: #fff;
+}
+
+.left_tabbar {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left_tabbar_list {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background: #eee;
+}
+
+.left_tabbar .active {
+  background: #fff;
+  color: #000;
+  transition: all 0.5s;
+  animation: show 0.5s;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+}
+
+.left_tabbar_item {
+  color: #7c7c7c;
+  font-size: 26rpx;
+  width: 100%;
+  padding: 20rpx 0;
+  text-align: center;
+  border-bottom: 1rpx solid #fff;
+}
+
+.right_content {
+  width: 75%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.tab_panel {
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  font-size: 26rpx;
+}
+
+.tab_panel>view {
+  padding: 30rpx;
+}

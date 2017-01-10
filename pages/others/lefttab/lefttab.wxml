@@ -1,0 +1,12 @@
+<view class="left_tabbar">
+  <view class="left_tabbar_list">
+    <view bindtap="changeTab" data-index="{{index}}" data-name="{{item.tabName}}" class="left_tabbar_item {{activeIndex==index?'active':''}}" wx:for="{{tabs}}">{{item.tabName}}</view>
+  </view>
+</view>
+<view class="right_content">
+  <view class="tab_panel">
+    <view>
+      <view wx:for="111111111111111111111111111111111111111111111111111111">現在是{{content}}</view>
+    </view>
+  </view>
+</view>
