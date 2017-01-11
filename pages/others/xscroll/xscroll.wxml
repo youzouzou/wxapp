@@ -1,0 +1,7 @@
+<scroll-view class="recommend_scroll_x_box" scroll-x="true">
+  <view class="recommend_hot_box" wx:for="{{hotList}}">
+    <image src="{{item.pic}}" class="recommend_hot_image"></image>
+    <view class="title text_center">{{item.title}}</view>
+    <view class="desc text_center">{{item.desc}}</view>
+  </view>
+</scroll-view>

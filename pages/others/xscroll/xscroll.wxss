@@ -1,0 +1,44 @@
+/* pages/others/xscroll/xscroll.wxss */
+
+.recommend_scroll_x_box {
+  height: 400rpx;
+  padding: 100rpx 0;
+  white-space: nowrap;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.recommend_hot_box:first-child {
+  margin-left: 24rpx;
+}
+
+.recommend_hot_box {
+  width: 300rpx;
+  height: 400rpx;
+  margin-right: 24rpx;
+  display: inline-block;
+}
+
+.recommend_hot_image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.title {
+  font-size: 26rpx;
+}
+
+.desc {
+  font-size: 24rpx;
+}
+
+.title, .desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

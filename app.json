@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/others/lefttab/lefttab",
-    "pages/others/others",
     
+    "pages/others/others",
+    "pages/others/lefttab/lefttab",
+    "pages/others/xscroll/xscroll",
     "pages/others/richcontent/richcontent",
     "pages/others/drawer/drawer",
     "pages/others/comment/comment",

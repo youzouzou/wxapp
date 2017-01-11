@@ -6,8 +6,8 @@ weui-wxss中的样式还算齐全（<a href="https://github.com/weui/weui-wxss" 
  3. - [x] 订单好中差评价交互
  4. - [x] 富文本解析(项目地址：<a href="https://github.com/icindy/wxParse" target="_blank">https://github.com/icindy/wxParse</a>)
  5. - [x] 左侧可滑动tab
- 6. - [ ] loading
- 7. - [ ] 横向滚动图文
+ 6. - [x] 横向滚动图文
+ 7. - [ ] loading
  8. - [ ] alert提示（错误，警告，成功，加载，icon可选，文字可配置）
  9. - [ ] 横向可滑动tabbar
  9. - [ ] 左滑取消操作[可选]、删除

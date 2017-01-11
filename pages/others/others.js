@@ -27,9 +27,15 @@ Page({
             },
             {
                 id: 'lefttab',
-                name: '左側菜單',
+                name: '左侧菜单',
                 open: false,
                 pages: ['lefttab']
+            },
+            {
+                id: 'xscroll',
+                name: '横向滚动',
+                open: false,
+                pages: ['xscroll']
             }
         ]
     },
