@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/others/others",
     "pages/others/loading/loading",
     "pages/others/xscroll_top_bar/xscroll_top_bar",
