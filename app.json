@@ -1,10 +1,9 @@
 {
   "pages": [
-    "pages/others/loading/loading",
     "pages/others/others",
-   
+    "pages/others/loading/loading",
     "pages/others/xscroll_top_bar/xscroll_top_bar",
-    "pages/others/city_picker/city_picker",    
+    "pages/others/city_picker/city_picker",
     "pages/others/city_single_page/city_single_page",
     "pages/others/city_multi_page/city_multi_page",
     "pages/others/city_multi_page_city/city_multi_page_city",
