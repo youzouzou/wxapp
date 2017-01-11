@@ -1,0 +1,47 @@
+<view class="white_bg">
+  <view class="weui-cells weui-cells_after-title">
+    <view wx:for="{{addressList}}" class="weui-cell weui-cell_access address_list_item">
+      <view class="weui-cell__bd">
+        <checkbox-group bindchange="checkboxChange" data-index="{{index}}">
+          <label class="weui-cell weui-check__label" style="margin-left:-40rpx;">
+            <checkbox class="weui-check" value="{{item.addressId}}" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+              <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked && !addressCheckHide}}"></icon>
+              <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked && !addressCheckHide}}"></icon>
+            </view>
+            <view class="weui-cell__bd">
+              <navigator url="../city_single_page/city_single_page?addressId={{item.addressId}}" hover-class="none"  hover-class="none" data-index="{{index}}">
+                <view class="weui-flex">
+                  <view class="weui-flex__item">
+                    <view class="placeholder">
+                      <view class="address_list_user_name">{{item.recipientName}} {{item.phoneNumber}}</view>
+                      <view class="address_list_address_detail">{{item.province+item.city+item.district+item.detailAddress}}</view>
+                    </view>
+                  </view>
+                </view>
+              </navigator>
+            </view>
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+       <view class="address_list_delete" catchtap="deleteAddress" data-id="{{item.addressId}}">删除</view>
+    </view>
+  </view>
+  <navigator url="../city_multi_page/city_multi_page" hover-class="none" class="weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <image src="/images/address_add.png" class="address_list_add_icon"></image>
+      </view>
+      <view class="weui-cell__bd">新增收货地址（省市区在不同页面）</view>
+    </view>
+  </navigator>
+</view>
+
+<view class="city_picker_panel">
+ <view>
+  <view>注意事项</view>
+  <view>1. 以上实例，修改时省市区在同一个页面，使用状态值控制当前显示的是省还是市还是区；新增为多页面跳转</view>
+  <view>2. 微信规定页面路径只能是5层，因此如果是选择省市区多页面，应注意路由层级不要超出5</view>
+ </view>
+</view>

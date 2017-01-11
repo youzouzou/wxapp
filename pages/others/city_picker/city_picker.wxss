@@ -1,0 +1,53 @@
+/* pages/others/city_picker/city_picker.wxss */
+Page{
+    background: #fff;
+}
+.address_list_user_name {
+  font-size: 32rpx;
+}
+
+.address_list_address_detail {
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 6rpx;
+}
+
+.address_list_add_icon {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 36px;
+  height: 36px;
+  margin-left: -14rpx;
+  margin-top: 0;
+}
+
+.address_list_item {
+  position: relative;
+  overflow-x: scroll;
+}
+
+.address_list_delete {
+  position: absolute;
+  right: -180rpx;
+  top: 0;
+  width: 100rpx;
+  height: 100%;
+  line-height: 160rpx;
+  text-align: center;
+  background: #e04904;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.city_picker_panel {
+  margin: 20rpx 20rpx 20rpx 0;
+  border-left: 10rpx solid #ccc;
+  font-size: 26rpx;
+  color:#999;
+}
+
+.city_picker_panel>view {
+  padding: 30rpx;
+  background: #fafafa;
+  border-radius: 0 20rpx 20rpx 0;
+}

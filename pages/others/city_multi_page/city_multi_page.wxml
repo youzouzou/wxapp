@@ -1,0 +1,6 @@
+<view class="weui-cells weui-cells_after-title">
+  <view bindtap="setProvice" data-index="{{index}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{provinceList}}">
+    <view class="weui-cell__bd">{{item.label}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>

@@ -36,6 +36,12 @@ Page({
                 name: '横向滚动',
                 open: false,
                 pages: ['xscroll']
+            },
+            {
+                id: 'citypicker',
+                name: '城市三级联选',
+                open: false,
+                pages: ['city_picker']
             }
         ]
     },

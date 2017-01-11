@@ -1,7 +1,11 @@
 {
   "pages": [
-    
     "pages/others/others",
+    "pages/others/city_picker/city_picker",
+    "pages/others/city_single_page/city_single_page",
+    "pages/others/city_multi_page/city_multi_page",
+    "pages/others/city_multi_page_city/city_multi_page_city",
+    "pages/others/city_multi_page_district/city_multi_page_district",
     "pages/others/lefttab/lefttab",
     "pages/others/xscroll/xscroll",
     "pages/others/richcontent/richcontent",
