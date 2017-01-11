@@ -1,0 +1,15 @@
+<view class="loading_box">
+  <view class="loading1"></view>
+</view>
+<view class="loading_box">
+  <view class="loading2"></view>
+</view>
+<view class="loading_box">
+  <view class="loading3 loading3_1"></view>
+  <view class="loading3 loading3_2"></view>
+  <view class="loading3 loading3_3"></view>
+</view>
+<view class="loading_box">
+  <view class="cube cube1"></view>
+  <view class="cube cube2"></view>
+</view>

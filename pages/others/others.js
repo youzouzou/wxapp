@@ -42,6 +42,12 @@ Page({
                 name: '城市三级联选',
                 open: false,
                 pages: ['city_picker']
+            },
+            {
+                id: 'loading',
+                name: '加载动画',
+                open: false,
+                pages: ['loading']
             }
         ]
     },
