@@ -1,2 +1,10 @@
-<!--pages/others/list/list.wxml-->
-<text>pages/others/list/list.wxml</text>
+<view class="select_all_btn" bindtap="selectAll">全选</view>
+<view class="cell_3" wx:for="{{list}}">
+  <view class="checkbox_group">
+    <view class="checkbox_icon checkbox_1" bindtap="check" wx:if="{{!item.selectStatus}}" data-index="{{index}}"> </view>
+    <view class="checkbox_icon checkbox_1_selected" bindtap="uncheck" wx:if="{{item.selectStatus}}" data-index="{{index}}">√</view>
+  </view>
+  <view class="cell_3_body">
+    <view>{{item.text}}</view>
+  </view>
+</view>

@@ -1,1 +1,45 @@
-/* pages/others/list/list.wxss */
+.cell_3 {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.select_all_btn {
+  padding: 20rpx;
+  color: #158447;
+  font-size: 26rpx;
+}
+
+.checkbox_group {
+  width: 15%;
+  height: 80rpx;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cell_3_body {
+  width: 85%;
+}
+
+.checkbox_icon {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  font-family: '微软雅黑', Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
+  text-align: center;
+  display: inline-block;
+  border: 1rpx solid #ececec;
+  vertical-align: middle;
+}
+
+.checkbox_1_selected {
+  background: #158447;
+  color: #fff;
+}
