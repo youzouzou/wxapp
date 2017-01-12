@@ -9,6 +9,14 @@ Page({
       { text: '这里填写内容' },
       { text: '这里填写内容' },
       { text: '这里填写内容' }
+    ],
+    list2: [
+      { text: '这里填写内容2' },
+      { text: '这里填写内容2' },
+      { text: '这里填写内容2' },
+      { text: '这里填写内容2' },
+      { text: '这里填写内容2' },
+      { text: '这里填写内容2' }
     ]
   },
   onLoad: function (options) {
@@ -67,8 +75,17 @@ Page({
       list: this.data.list
     });
   },
-  cancel: function (e) {
+  delete2: function (e) {
     console.log('删除', e);
+    var index = e.currentTarget.dataset.index;
+    this.data.list2[index].scrollLeft = 0;
+    this.data.list2.splice(index, 1);
+    this.setData({
+      list2: this.data.list2
+    });
+  },
+  cancel: function (e) {
+    console.log('取消', e);
     var index = e.currentTarget.dataset.index;
     this.data.list[index].scrollLeft = 0;
     this.setData({

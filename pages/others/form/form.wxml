@@ -12,11 +12,18 @@
     </view>
   </view>
 </view>
-<view class="title margin_top">左滑删除</view>
+<view class="title margin_top">左滑取消删除</view>
 <scroll-view class="cell_2" scroll-x="true" scroll-left="{{item.scrollLeft}}" wx:for="{{list}}">
   <view class="cell_2_body">
     <view class="cell_2_body_content">{{item.text}}</view>
   </view>
   <view class="cell_2_cancel" bindtap="cancel" data-index="{{index}}">取消</view>
   <view class="cell_2_delete" bindtap="delete" data-index="{{index}}">删除</view>
+</scroll-view>
+<view class="title margin_top">左滑删除</view>
+<scroll-view class="cell_2" scroll-x="true" scroll-left="{{item.scrollLeft}}" wx:for="{{list2}}">
+  <view class="cell_2_body">
+    <view class="cell_2_body_content">{{item.text}}</view>
+  </view>
+  <view class="cell_2_delete2" bindtap="delete2" data-index="{{index}}">删除</view>
 </scroll-view>

@@ -18,7 +18,7 @@
   background: #fff;
   position: relative;
   overflow-x: scroll;
-  border-bottom:1rpx solid #ececec;
+  border-bottom: 1rpx solid #ececec;
 }
 
 .cell_2_body {
@@ -30,7 +30,7 @@
   line-height: 100rpx;
 }
 
-.cell_2_cancel, .cell_2_delete {
+.cell_2_cancel, .cell_2_delete, .cell_2_delete2 {
   position: absolute;
   top: 0;
   font-size: 26rpx;
@@ -48,6 +48,12 @@
 
 .cell_2_delete {
   right: -240rpx;
+  background: #f6a623;
+  color: #fff;
+}
+
+.cell_2_delete2 {
+  right: -120rpx;
   background: #f6a623;
   color: #fff;
 }
