@@ -13,7 +13,7 @@ weui-wxss中的样式还算齐全（<a href="https://github.com/weui/weui-wxss" 
  9. - [x] 左滑取消操作、删除
  10. - [x] 单选按钮，复选按钮，on/off开关
  11. - [x] checkbox全选/全不选
- 12. - [ ] alert提示（错误，警告，成功，加载，icon可选，文字可配置）
+ 12. - [x] toast(warning,danger)
  13. - [ ] 瀑布流图文（商品列表，宽度固定，高度自适应）
  14. - [ ] 3D图片轮换
  15. - [ ] 横向可滑动tabbar
