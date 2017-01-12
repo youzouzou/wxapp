@@ -28,3 +28,11 @@
   <view class="knock"></view>
   <view class="knock knock_last"></view>
 </view>
+<view class="loading_box">
+  <view class="loading_fade_circle"></view>
+</view>
+<view class="loading_box">
+  <view class="loading_rotate_cube_parent">
+  <view class="loading_rotate_cube"></view>
+  </view>
+</view>
