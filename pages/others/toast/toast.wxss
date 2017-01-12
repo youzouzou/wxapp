@@ -1,0 +1,90 @@
+/* pages/others/toast/toast.wxss */
+
+Page {
+  background: #fff;
+}
+
+.btn {
+  font-size: 28rpx;
+  padding: 15rpx 30rpx;
+  width: 100rpx;
+  margin: 20rpx;
+  text-align: center;
+  border-radius: 20rpx;
+}
+
+.btn_warning {
+  background: #f6a623;
+  color: #fff;
+}
+
+.btn_danger {
+  background: #f00;
+  color: #fff;
+}
+
+/*.modal_screen{
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index:9999;
+    overflow: hidden;
+}*/
+
+.toast_screen {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 888;
+  overflow: hidden;
+}
+
+.toast_content_box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.toast_icon_box {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+.toast_content {
+  width: 50%;
+  padding: 20rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20rpx;
+}
+
+.toast_icon {
+  font-size: 30rpx;
+  color: #fff;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  display: block;
+  line-height: 35rpx;
+  border-radius: 50%;
+  border: 1rpx solid #f6a623;
+  background: #f6a623;
+}
+
+.toast_content_text {
+  height: 100%;
+  width: 80%;
+  float: left;
+  color: #fff;
+  font-size: 28rpx;
+}

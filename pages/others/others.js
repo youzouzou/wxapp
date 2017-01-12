@@ -8,6 +8,12 @@ Page({
                 pages: ['form', 'list']
             },
             {
+                id: 'toast',
+                name: '操作提示',
+                open: false,
+                pages: ['toast']
+            },
+            {
                 id: 'marquee',
                 name: '文字跑马灯',
                 open: false,

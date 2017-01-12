@@ -1,0 +1,18 @@
+<view style="{{toastModalStatus?'position:fixed;':''}}">
+  <view class="btn btn_warning" bindtap="warning">警告</view>
+  <view class="btn btn_danger" bindtap="danger">危险</view>
+</view>
+
+<!--以下为toast显示的内容-->
+<view class="toast_content_box" wx:if="{{toastModalStatus}}">
+  <view class="toast_content">
+    <view class="toast_icon_box">
+      <view class="toast_icon" style="{{'border: 1rpx solid '+ toastColor+';background: '+toastColor+';color:'+toastFontColor}}">!</view>
+    </view>
+    <view class="toast_content_text">
+      <view>{{toastType}}</view>
+      <view>{{toastText}}</view>
+    </view>
+  </view>
+</view>
+<view class="toast_screen" wx:if="{{toastModalStatus}}"></view>
