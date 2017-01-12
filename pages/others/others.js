@@ -2,6 +2,12 @@ Page({
     data: {
         list: [
             {
+                id: 'form',
+                name: '表单',
+                open: false,
+                pages: ['form', 'list']
+            },
+            {
                 id: 'marquee',
                 name: '文字跑马灯',
                 open: false,
@@ -48,12 +54,6 @@ Page({
                 name: '加载动画',
                 open: false,
                 pages: ['loading']
-            },
-            {
-                id: 'form',
-                name: '表单',
-                open: false,
-                pages: ['form']
             }
         ]
     },

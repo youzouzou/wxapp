@@ -2,6 +2,8 @@
 Page({
   data: {
     count: 60,
+    activeIndex: 0,
+    swaitchStatus: true,
     list: [
       { text: '这里填写内容' },
       { text: '这里填写内容' },
@@ -17,6 +19,42 @@ Page({
       { text: '这里填写内容2' },
       { text: '这里填写内容2' },
       { text: '这里填写内容2' }
+    ],
+    checkList: [
+      {
+        text: '这里填写内容',
+        selectStatus: true
+      },
+      {
+        text: '这里填写内容'
+      },
+      {
+        text: '这里填写内容'
+      },
+      {
+        text: '这里填写内容'
+      },
+      {
+        text: '这里填写内容'
+      },
+      {
+        text: '这里填写内容',
+        selectStatus: true
+      }
+    ],
+    radioList: [
+      {
+        text: '单选内容'
+      },
+      {
+        text: '单选内容'
+      },
+      {
+        text: '单选内容'
+      },
+      {
+        text: '单选内容'
+      }
     ]
   },
   onLoad: function (options) {
@@ -90,6 +128,35 @@ Page({
     this.data.list[index].scrollLeft = 0;
     this.setData({
       list: this.data.list
+    });
+  },
+  check: function (e) {
+    var index = e.currentTarget.dataset.index;
+    this.data.checkList[index].selectStatus = true;
+    this.setData({
+      checkList: this.data.checkList
+    });
+  },
+  uncheck: function (e) {
+    var index = e.currentTarget.dataset.index;
+    this.data.checkList[index].selectStatus = false;
+    this.setData({
+      checkList: this.data.checkList
+    });
+  },
+  radioChange: function (e) {
+    this.setData({
+      activeIndex: e.currentTarget.dataset.index
+    });
+  },
+  switchOn: function () {
+    this.setData({
+      swaitchStatus: true
+    });
+  },
+  switchOff: function () {
+    this.setData({
+      swaitchStatus: false
     });
   }
 })

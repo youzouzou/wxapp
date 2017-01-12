@@ -27,3 +27,57 @@
   </view>
   <view class="cell_2_delete2" bindtap="delete2" data-index="{{index}}">删除</view>
 </scroll-view>
+<view class="title margin_top">复选框</view>
+<view class="cell_2 checkbox" wx:for="{{checkList}}">
+  <view class="checkbox_group">
+    <view class="checkbox_icon checkbox_1" bindtap="check" wx:if="{{!item.selectStatus}}" data-index="{{index}}"></view>
+    <view class="checkbox_icon checkbox_1_selected" bindtap="uncheck" wx:if="{{item.selectStatus}}" data-index="{{index}}"></view>
+  </view>
+  <view class="checkbox_content">{{item.text}}</view>
+</view>
+<view class="title margin_top">可选样式
+  <view>替换checkbox_1和checkbox_1_selected的序号值即可</view>
+</view>
+<view class="cell_2">
+  <view class="checkbox_group">
+    <view class="checkbox_icon checkbox_2"></view>
+    <view class="checkbox_icon checkbox_2_selected"></view>
+  </view>
+  <view class="checkbox_group">
+    <view class="checkbox_icon checkbox_3"></view>
+    <view class="checkbox_icon checkbox_3_selected"></view>
+  </view>
+  <view class="checkbox_group">
+    <view class="checkbox_icon checkbox_4"></view>
+    <view class="checkbox_icon checkbox_4_selected"></view>
+  </view>
+  <view class="checkbox_group">
+    <view class="checkbox_icon checkbox_5"></view>
+    <view class="checkbox_icon checkbox_5_selected"></view>
+  </view>
+  <view class="checkbox_group">
+    <view class="checkbox_icon checkbox_6"></view>
+    <view class="checkbox_icon checkbox_6_selected"></view>
+  </view>
+</view>
+<view class="cell_2 checkbox" wx:for="{{radioList}}">
+  <view class="checkbox_group">
+    <view class="checkbox_icon checkbox_1" bindtap="radioChange" data-index="{{index}}" wx:if="{{activeIndex!=index}}"></view>
+    <view class="checkbox_icon checkbox_1_selected" bindtap="radioChange" wx:if="{{activeIndex==index}}" data-index="{{index}}"></view>
+  </view>
+  <view class="checkbox_content">{{item.text}}</view>
+</view>
+<view class="cell_2">
+  <view class="switch_content">
+    <view>這裡是內容</view>
+  </view>
+  <view class="switch_group">
+    <view class="switch_icon switch_1_on" wx:if="{{swaitchStatus}}" bindtap="switchOff">
+      <view class="switch_1_on_circle"></view>
+    </view>
+    <view class="switch_icon switch_1_off" wx:if="{{!swaitchStatus}}" bindtap="switchOn">
+      <view class="switch_1_off_circle"></view>
+    </view>
+  </view>
+</view>
+<view class="title margin_top">PS：只在网上找到了这几个样式的图片。。可以直接在CSS中替换图片url；开关按钮可以在CSS中修改按钮颜色</view>
