@@ -1,0 +1,5 @@
+/* pages/others/form/form.wxss */
+
+Page {
+  background: #fff;
+}

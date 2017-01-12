@@ -48,6 +48,12 @@ Page({
                 name: '加载动画',
                 open: false,
                 pages: ['loading']
+            },
+            {
+                id: 'form',
+                name: '表单',
+                open: false,
+                pages: ['form']
             }
         ]
     },

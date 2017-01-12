@@ -1,0 +1,13 @@
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input weui-cell_vcode">
+    <view class="weui-cell__hd">
+      <view class="weui-label">手机号</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="number" bindblur="savePhoneNumber" name="phoneNumber" placeholder="请输入手机号" />
+    </view>
+    <view class="weui-cell__ft">
+      <view class="weui-vcode-btn" bindtap="getValidCode">{{count!=60?count+' s':'获取验证码'}}</view>
+    </view>
+  </view>
+</view>

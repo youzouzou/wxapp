@@ -1,7 +1,8 @@
 {
   "pages": [
-    
+     
     "pages/others/others",
+   "pages/others/form/form",
     "pages/others/loading/loading",
     "pages/others/xscroll_top_bar/xscroll_top_bar",
     "pages/others/city_picker/city_picker",
