@@ -1,7 +1,15 @@
 // pages/others/form/form.js
 Page({
   data: {
-    count: 60
+    count: 60,
+    list: [
+      { text: '这里填写内容' },
+      { text: '这里填写内容' },
+      { text: '这里填写内容' },
+      { text: '这里填写内容' },
+      { text: '这里填写内容' },
+      { text: '这里填写内容' }
+    ]
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -49,5 +57,22 @@ Page({
         count: 60
       });
     }
+  },
+  delete: function (e) {
+    console.log('删除', e);
+    var index = e.currentTarget.dataset.index;
+    this.data.list[index].scrollLeft = 0;
+    this.data.list.splice(index, 1);
+    this.setData({
+      list: this.data.list
+    });
+  },
+  cancel: function (e) {
+    console.log('删除', e);
+    var index = e.currentTarget.dataset.index;
+    this.data.list[index].scrollLeft = 0;
+    this.setData({
+      list: this.data.list
+    });
   }
 })

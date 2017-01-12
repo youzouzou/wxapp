@@ -1,5 +1,59 @@
 /* pages/others/form/form.wxss */
 
-Page {
+.title {
+  font-size: 28rpx;
+  color: #7c7c7c;
+  padding: 20rpx;
+  border-left: 4rpx solid #ccc;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.margin_top {
+  margin-top: 30rpx;
+}
+
+.cell_2 {
+  width: 100%;
+  height: 100rpx;
   background: #fff;
+  position: relative;
+  overflow-x: scroll;
+  border-bottom:1rpx solid #ececec;
+}
+
+.cell_2_body {
+  width: 100%;
+}
+
+.cell_2_body_content {
+  padding: 0 20rpx;
+  line-height: 100rpx;
+}
+
+.cell_2_cancel, .cell_2_delete {
+  position: absolute;
+  top: 0;
+  font-size: 26rpx;
+  width: 120rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.cell_2_cancel {
+  right: -120rpx;
+  background: #ececec;
+  color: #7c7c7c;
+}
+
+.cell_2_delete {
+  right: -240rpx;
+  background: #f6a623;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
 }

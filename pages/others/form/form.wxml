@@ -1,3 +1,4 @@
+<view class="title">验证码倒计时</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input weui-cell_vcode">
     <view class="weui-cell__hd">
@@ -11,3 +12,11 @@
     </view>
   </view>
 </view>
+<view class="title margin_top">左滑删除</view>
+<scroll-view class="cell_2" scroll-x="true" scroll-left="{{item.scrollLeft}}" wx:for="{{list}}">
+  <view class="cell_2_body">
+    <view class="cell_2_body_content">{{item.text}}</view>
+  </view>
+  <view class="cell_2_cancel" bindtap="cancel" data-index="{{index}}">取消</view>
+  <view class="cell_2_delete" bindtap="delete" data-index="{{index}}">删除</view>
+</scroll-view>
