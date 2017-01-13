@@ -1,7 +1,9 @@
 /* pages/others/city_picker/city_picker.wxss */
-Page{
-    background: #fff;
+
+Page {
+  background: #fff;
 }
+
 .address_list_user_name {
   font-size: 32rpx;
 }
@@ -10,6 +12,12 @@ Page{
   font-size: 26rpx;
   color: #999;
   margin-top: 6rpx;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
 }
 
 .address_list_add_icon {
@@ -43,7 +51,7 @@ Page{
   margin: 20rpx 20rpx 20rpx 0;
   border-left: 10rpx solid #ccc;
   font-size: 26rpx;
-  color:#999;
+  color: #999;
 }
 
 .city_picker_panel>view {
