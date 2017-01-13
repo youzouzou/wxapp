@@ -1,2 +1,16 @@
-<!--pages/others/xscroll_top_bar/xscroll_top_bar.wxml-->
-<text>pages/others/xscroll_top_bar/xscroll_top_bar.wxml</text>
+<scroll-view scroll-x="true" class="xscroll_bar">
+  <view class="menu_item {{index==activeIndex?'active':''}}" style="width:{{itemWidth}};" wx:for="{{menus}}" bindtap="tabChange" data-index="{{index}}">
+    <view class="{{!(index==0 || index-1==activeIndex || index==activeIndex)?'menu_item_border':''}}">
+      {{item.menu}}{{index+1}}
+    </view>
+  </view>
+</scroll-view>
+
+<view class="menu_content">选中菜单{{activeIndex+1}}</view>
+
+<view class="menu_panel">
+ <view>
+  <view>当菜单个数小于等于 5 时，tab宽度按照屏幕尺寸均分；</view>
+  <view>当菜单个数大于 5 时，tab宽度为160rpx；超出部分可左滑滚动</view>
+ </view>
+</view>
