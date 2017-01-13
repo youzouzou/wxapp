@@ -23,6 +23,12 @@ Page {
   animation: show 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
 @-webkit-keyframes show {
   0% {
     opacity: 0;
