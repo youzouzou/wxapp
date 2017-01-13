@@ -38,10 +38,10 @@ Page({
                 pages: ['richcontent']
             },
             {
-                id: 'lefttab',
-                name: '左侧菜单',
+                id: 'tab',
+                name: 'tab菜单',
                 open: false,
-                pages: ['lefttab']
+                pages: ['lefttab', 'xscroll_top_bar']
             },
             {
                 id: 'xscroll',
