@@ -2,6 +2,7 @@
   "pages": [
     "pages/others/others",
     "pages/others/toast/toast",
+    "pages/others/pictures/pictures",
     "pages/others/form/form",
     "pages/others/list/list",
     "pages/others/loading/loading",

@@ -1,0 +1,26 @@
+<view class="imgs_container">
+  <view class="title">1. 旋转</view>
+  <view class="img_box">
+    <view>
+      <image animation="{{animationData}}" src="{{activePic}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="pages">{{activeIndex+1}} / {{length}}</view>
+  <view class="btn_group">
+    <view class="btn btn_left" bindtap="pre">上一张</view>
+    <view class="btn btn_right" bindtap="next">下一张</view>
+  </view>
+</view>
+<view class="imgs_container">
+  <view class="title">2. 淡入淡出</view>
+  <view class="img_box">
+    <view>
+      <image animation="{{animationData2}}" src="{{activePic2}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="pages">{{activeIndex2+1}} / {{length}}</view>
+  <view class="btn_group">
+    <view class="btn btn_left" bindtap="pre2">上一张</view>
+    <view class="btn btn_right" bindtap="next2">下一张</view>
+  </view>
+</view>

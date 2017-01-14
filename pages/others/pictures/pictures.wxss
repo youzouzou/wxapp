@@ -1,0 +1,71 @@
+/* pages/others/pictures/pictures.wxss */
+
+Page {
+  background: #ececec;
+}
+
+.title {
+  font-size: 30rpx;
+  padding: 10rpx 20rpx;
+  border-left: 6rpx solid #ccc;
+}
+
+.imgs_container {
+  width: 100%;
+  margin: 20rpx 0 40rpx 0;
+  overflow: hidden;
+}
+
+.img_box {
+  text-align: center;
+}
+
+/*image {
+  animation: show 1s ease-in-out;
+  transition: all 1s;
+}*/
+
+.btn_group {
+  padding: 30rpx;
+}
+
+.btn {
+  padding: 20rpx 40rpx;
+  background: #6ed4bd;
+  color: #fff;
+  display: inline-block;
+  font-size: 24rpx;
+}
+
+.btn_left {
+  float: left;
+}
+
+.btn_right {
+  float: right;
+}
+
+.pages {
+  text-align: center;
+  font-size: 24rpx;
+}
+
+/*@keyframes show {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}*/

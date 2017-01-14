@@ -60,6 +60,12 @@ Page({
                 name: '加载动画',
                 open: false,
                 pages: ['loading']
+            },
+            {
+                id: 'pictures',
+                name: '图片翻页',
+                open: false,
+                pages: ['pictures']
             }
         ]
     },
