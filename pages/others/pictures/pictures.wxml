@@ -1,5 +1,5 @@
 <view class="imgs_container">
-  <view class="title">1. 旋转</view>
+  <view class="title">1. 旋转缩放</view>
   <view class="img_box">
     <view>
       <image animation="{{animationData}}" src="{{activePic}}" mode="aspectFit"></image>
@@ -22,5 +22,44 @@
   <view class="btn_group">
     <view class="btn btn_left" bindtap="pre2">上一张</view>
     <view class="btn btn_right" bindtap="next2">下一张</view>
+  </view>
+</view>
+<view class="imgs_container">
+  <view class="title">3. 滑入滑出（将3中的translateX改为-400可在左侧滑入滑出）</view>
+  <view class="img_box">
+    <view>
+      <image animation="{{animationData3}}" src="{{activePic3}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="pages">{{activeIndex3+1}} / {{length}}</view>
+  <view class="btn_group">
+    <view class="btn btn_left" bindtap="pre3">上一张</view>
+    <view class="btn btn_right" bindtap="next3">下一张</view>
+  </view>
+</view>
+<view class="imgs_container">
+  <view class="title">4. Y轴翻转（同步修改4中的rotateY为rotateX可实现X轴翻转）</view>
+  <view class="img_box">
+    <view>
+      <image animation="{{animationData4}}" src="{{activePic4}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="pages">{{activeIndex4+1}} / {{length}}</view>
+  <view class="btn_group">
+    <view class="btn btn_left" bindtap="pre4">上一张</view>
+    <view class="btn btn_right" bindtap="next4">下一张</view>
+  </view>
+</view>
+<view class="imgs_container">
+  <view class="title">5. 橡皮拉伸</view>
+  <view class="img_box">
+    <view>
+      <image animation="{{animationData5}}" src="{{activePic5}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="pages">{{activeIndex5+1}} / {{length}}</view>
+  <view class="btn_group">
+    <view class="btn btn_left" bindtap="pre5">上一张</view>
+    <view class="btn btn_right" bindtap="next5">下一张</view>
   </view>
 </view>

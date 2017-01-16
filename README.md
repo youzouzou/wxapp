@@ -15,7 +15,7 @@ weui-wxss中的样式还算齐全（<a href="https://github.com/weui/weui-wxss" 
  11. - [x] checkbox全选/全不选
  12. - [x] toast(warning,danger)
  13. - [x] 横向可滑动tabbar
- 14. - [ ] 3D图片轮换
+ 14. - [x] 图片翻页动画
  15. - [ ] 瀑布流图文（商品列表，宽度固定，高度自适应）
  16. - [ ] 自定义日历
  17. - [ ] 视频自动横屏播放
