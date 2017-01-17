@@ -1,11 +1,26 @@
 /* pages/others/calendar/calendar.wxss */
-.selected_date{
-    padding:25rpx;
+
+.selected_date {
+  padding: 20rpx;
+  overflow: hidden;
 }
+
+.selected_date>view {
+  width: 33.3%;
+  float: left;
+}
+
+.calendar_panel {
+  width: 100%;
+  height: 600rpx;
+}
+
 .calendar_box {
   width: 100%;
   background: #fff;
   overflow: hidden;
+  border-bottom: 1rpx solid #ececec;
+  display: flex;
 }
 
 .weekday_label {
@@ -13,5 +28,28 @@
   float: left;
   text-align: center;
   font-size: 26rpx;
-  padding: 20rpx 0;
+  padding: 10rpx 0;
+}
+
+.weekday_label>text {
+  width:50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: inline-block;
+}
+
+.select_icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.active_date {
+  background: #148447;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.show_box {
+  padding: 20rpx;
+  font-size: 26rpx;
 }

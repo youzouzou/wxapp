@@ -1,10 +1,26 @@
-<view class="selected_date">{{selectedDate}}</view>
-<view class="calendar_box">
-  <view class="weekday_label">日</view>
-  <view class="weekday_label">一</view>
-  <view class="weekday_label">二</view>
-  <view class="weekday_label">三</view>
-  <view class="weekday_label">四</view>
-  <view class="weekday_label">五</view>
-  <view class="weekday_label">六</view>
+<view class="selected_date">
+  <view bindtap="preMonth">
+    <image class="select_icon" src="/images/left.png"></image>
+  </view>
+  <view class="text_center">{{curYear+'-'+curMonth}}</view>
+  <view style="text-align:right;" bindtap="nextMonth">
+    <image class="select_icon" src="/images/right.png"></image>
+  </view>
 </view>
+<view class="calendar_panel">
+  <view class="calendar_box">
+    <view class="weekday_label">日</view>
+    <view class="weekday_label">一</view>
+    <view class="weekday_label">二</view>
+    <view class="weekday_label">三</view>
+    <view class="weekday_label">四</view>
+    <view class="weekday_label">五</view>
+    <view class="weekday_label">六</view>
+  </view>
+  <view class="calendar_box" wx:for="{{dateList}}" wx:for-item="week" style="{{index==0?'justify-content: flex-end;':''}}">
+    <view class="weekday_label" wx:for="{{week}}">
+      <text class="{{item.value==selectedDate?'active_date':''}}" bindtap="selectDate" data-date="{{item}}">{{item.date}}</text>
+    </view>
+  </view>
+</view>
+<view class="show_box">选中日期：{{selectedDate}} {{selectedWeek}}</view>
