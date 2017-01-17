@@ -3,7 +3,7 @@
 <view class="close_icon" bindtap="hideModal">×</view>
   <view class="drawer_attr_content">
     <view class="text_center">
-    <image class="drawer_image" src="/images/example.png"></image>
+    <image class="drawer_image" src="/images/example0.png"></image>
     </view>
     <view class="drawer_desc">这里可自定义内容，高度超出300px将出现滚动条，可在wxss中自定义修改高度限制</view>
     <view class="drawer_desc">点击遮罩层或右上方的关闭按钮可收回抽屉层</view>

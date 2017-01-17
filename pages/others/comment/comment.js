@@ -3,15 +3,15 @@ Page({
     windowHeight: 'auto',
     commentList: [
       {
-        commodityIcon: '/images/example.png',
+        commodityIcon: '/images/example0.png',
         commodityId: 1
       },
       {
-        commodityIcon: '/images/example.png',
+        commodityIcon: '/images/example0.png',
         commodityId: 2
       },
       {
-        commodityIcon: '/images/example.png',
+        commodityIcon: '/images/example0.png',
         commodityId: 3
       }
     ]
