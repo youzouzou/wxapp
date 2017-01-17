@@ -1,0 +1,87 @@
+/* pages/others/waterfall/waterfall.wxss */
+
+Page {
+  background: #fff;
+}
+
+.waterfall {
+  width: 100%;
+  position: relative;
+}
+
+.img_box {
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  animation: fadeShow 1s;
+}
+
+.img_box image {
+  width: 94%;
+}
+
+.item_desc {
+  font-size: 24rpx;
+}
+
+.loading_box {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1000;
+  bottom: 30rpx;
+  left: 49%;
+}
+
+.loading_fade_circle {
+  width: 30rpx;
+  height: 30rpx;
+  background: #1ab394;
+  border-radius: 50%;
+  -webkit-animation: fading_circle 1s ease-out infinite alternate;
+  animation: fading_circle 1s ease-out infinite alternate;
+}
+
+@-webkit-keyframes fading_circle {
+  0% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(0.1);
+    opacity: 1;
+  }
+}
+
+@keyframes fading_circle {
+  0% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(0.1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeShow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeShow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

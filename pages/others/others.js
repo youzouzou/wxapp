@@ -66,6 +66,12 @@ Page({
                 name: '图片翻页',
                 open: false,
                 pages: ['pictures']
+            },
+            {
+                id: 'waterfall',
+                name: '瀑布流',
+                open: false,
+                pages: ['waterfall']
             }
         ]
     },

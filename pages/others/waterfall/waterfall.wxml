@@ -1,0 +1,11 @@
+<view>
+  <navigator url="url" wx:for="{{list}}">
+    <view class="img_box" style="top:{{item.top}}px;left:{{item.left}}px">
+      <image src="{{item.url}}" mode="widthFix" bindload="loadImage" data-index="{{index}}"></image>
+      <view class="item_desc" style="height:{{descHeight}}px">{{item.name}}</view>
+    </view>
+  </navigator>
+</view>
+<view class="loading_box" wx:if="{{pageStatus}}" style="top:{{(leftHeight>rightHeight?leftHeight:rightHeight)-40}}px">
+  <view class="loading_fade_circle"></view>
+</view>
