@@ -1,6 +1,8 @@
 {
   "pages": [
+    
     "pages/others/others",
+    "pages/others/calendar/calendar",
     "pages/others/waterfall/waterfall",
     "pages/others/toast/toast",
     "pages/others/pictures/pictures",

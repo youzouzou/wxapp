@@ -1,0 +1,17 @@
+/* pages/others/calendar/calendar.wxss */
+.selected_date{
+    padding:25rpx;
+}
+.calendar_box {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+
+.weekday_label {
+  width: 14.28%;
+  float: left;
+  text-align: center;
+  font-size: 26rpx;
+  padding: 20rpx 0;
+}

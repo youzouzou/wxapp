@@ -1,0 +1,10 @@
+<view class="selected_date">{{selectedDate}}</view>
+<view class="calendar_box">
+  <view class="weekday_label">日</view>
+  <view class="weekday_label">一</view>
+  <view class="weekday_label">二</view>
+  <view class="weekday_label">三</view>
+  <view class="weekday_label">四</view>
+  <view class="weekday_label">五</view>
+  <view class="weekday_label">六</view>
+</view>

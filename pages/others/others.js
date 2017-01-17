@@ -72,6 +72,12 @@ Page({
                 name: '瀑布流',
                 open: false,
                 pages: ['waterfall']
+            },
+            {
+                id: 'calendar',
+                name: '自定义日历',
+                open: false,
+                pages: ['calendar']
             }
         ]
     },
