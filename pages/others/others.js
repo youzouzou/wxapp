@@ -78,6 +78,12 @@ Page({
                 name: '自定义日历',
                 open: false,
                 pages: ['calendar']
+            },
+            {
+                id: 'commodity_attr',
+                name: '商品属性联动',
+                open: false,
+                pages: ['commodity_attr']
             }
         ]
     },

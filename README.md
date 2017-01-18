@@ -10,13 +10,14 @@ weui-wxss中的样式还算齐全（<a href="https://github.com/weui/weui-wxss" 
  7. - [x] 省市区三级联动（单页面（小程序的页面层级限制）、多页面两种）
  8. - [x] loading
  9. - [x] 验证码倒计时
- 9. - [x] 左滑取消操作、删除
- 10. - [x] 单选按钮，复选按钮，on/off开关
- 11. - [x] checkbox全选/全不选
- 12. - [x] toast(warning,danger)
- 13. - [x] 横向可滑动tabbar
- 14. - [x] 图片翻页动画
- 15. - [x] 瀑布流图文
- 16. - [x] 自定义日历
+ 10. - [x] 左滑取消操作、删除
+ 11. - [x] 单选按钮，复选按钮，on/off开关
+ 12. - [x] checkbox全选/全不选
+ 13. - [x] toast(warning,danger)
+ 14. - [x] 横向可滑动tabbar
+ 15. - [x] 图片翻页动画
+ 16. - [x] 瀑布流图文
+ 17. - [x] 自定义日历
+ 18. - [x] 商品属性值联动
 
 
