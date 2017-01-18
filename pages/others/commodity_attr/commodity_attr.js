@@ -284,5 +284,27 @@ Page({
         this.selectValue(attrValueList, i, attrValueList[i].attrKey, attrValueList[i].selectedValue, true);
       }
     }
+  },
+  submit: function () {
+    var value = [];
+    for (var i = 0; i < this.data.attrValueList.length; i++) {
+      if (!this.data.attrValueList[i].selectedValue) {
+        break;
+      }
+      value.push(this.data.attrValueList[i].selectedValue);
+    }
+    if (i < this.data.attrValueList.length) {
+      wx.showToast({
+        title: '请完善属性',
+        icon: 'loading',
+        duration: 1000
+      })
+    } else {
+      wx.showToast({
+        title: '选择的属性：' + value.join('-'),
+        icon: 'sucess',
+        duration: 1000
+      })
+    }
   }
 })
