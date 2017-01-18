@@ -1,7 +1,7 @@
 // pages/home/commodity_detail/commodity_detail.js
 Page({
   data: {
-    firstIndex: '',
+    firstIndex: -1,
     commodityAttr: [
       {
         priceId: 1,
@@ -104,7 +104,7 @@ Page({
     });
     this.distachAttrValue(this.data.commodityAttr);
     // 只有一个属性组合的时候默认选中
-    console.log(this.data.attrValueList);
+    // console.log(this.data.attrValueList);
     if (this.data.commodityAttr.length == 1) {
       for (var i = 0; i < this.data.commodityAttr[0].attrValueList.length; i++) {
         this.data.attrValueList[i].selectedValue = this.data.commodityAttr[0].attrValueList[i].attrValue;
@@ -196,11 +196,13 @@ Page({
     }
   },
   selectValue: function (attrValueList, index, key, value, unselectStatus) {
+    // console.log('firstIndex', this.data.firstIndex);
     // 选中
     var includeGroup = [];
-    if (index == this.data.firstIndex && !unselectStatus) { // 如果是第一个选中的属性值，则所有类别可选
+    if (index == this.data.firstIndex && !unselectStatus) { // 如果是第一个选中的属性值，则该属性所有值可选
       var commodityAttr = this.data.commodityAttr;
       // 其他选中的属性值全都置空
+      // console.log('其他选中的属性值全都置空', index, this.data.firstIndex, !unselectStatus);
       for (var i = 0; i < attrValueList.length; i++) {
         for (var j = 0; j < attrValueList[i].attrValues.length; j++) {
           attrValueList[i].selectedValue = '';
@@ -210,24 +212,6 @@ Page({
       var commodityAttr = this.data.includeGroup;
     }
 
-    var count = 0;
-    for (var i = 0; i < attrValueList.length; i++) {
-      for (var j = 0; j < attrValueList[i].attrValues.length; j++) {
-        if (attrValueList[i].selectedValue) {
-          count++;
-        }
-      }
-    }
-
-    if (!count) {// 第一次选中，同属性的值都可选
-      this.setData({
-        firstIndex: index
-      });
-    } else {
-      this.setData({
-        firstIndex: ''
-      });
-    }
     // console.log('选中', commodityAttr, index, key, value);
     for (var i = 0; i < commodityAttr.length; i++) {
       for (var j = 0; j < commodityAttr[i].attrValueList.length; j++) {
@@ -257,11 +241,30 @@ Page({
         }
       }
     }
-    console.log('结果', attrValueList);
+    // console.log('结果', attrValueList);
     this.setData({
       attrValueList: attrValueList,
       includeGroup: includeGroup
     });
+
+    var count = 0;
+    for (var i = 0; i < attrValueList.length; i++) {
+      for (var j = 0; j < attrValueList[i].attrValues.length; j++) {
+        if (attrValueList[i].selectedValue) {
+          count++;
+          break;
+        }
+      }
+    }
+    if (count < 2) {// 第一次选中，同属性的值都可选
+      this.setData({
+        firstIndex: index
+      });
+    } else {
+      this.setData({
+        firstIndex: -1
+      });
+    }
   },
   disSelectValue: function (attrValueList, index, key, value) {
     // 取消选中
