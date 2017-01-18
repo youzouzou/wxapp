@@ -18,6 +18,6 @@ weui-wxss中的样式还算齐全（<a href="https://github.com/weui/weui-wxss" 
  15. - [x] 图片翻页动画
  16. - [x] 瀑布流图文
  17. - [x] 自定义日历
- 18. - [x] 商品属性值联动
+ 18. - [ ] 商品属性值联动
 
 
