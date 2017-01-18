@@ -103,6 +103,16 @@ Page({
       includeGroup: this.data.commodityAttr
     });
     this.distachAttrValue(this.data.commodityAttr);
+    // 只有一个属性组合的时候默认选中
+    console.log(this.data.attrValueList);
+    if (this.data.commodityAttr.length == 1) {
+      for (var i = 0; i < this.data.commodityAttr[0].attrValueList.length; i++) {
+        this.data.attrValueList[i].selectedValue = this.data.commodityAttr[0].attrValueList[i].attrValue;
+      }
+      this.setData({
+        attrValueList: this.data.attrValueList
+      });
+    }
   },
   distachAttrValue: function (commodityAttr) {
     // 将后台返回的数据组合成类似
