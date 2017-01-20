@@ -86,10 +86,37 @@ Page({
         id: 9,
         tabName: '菜單九'
       }
+    ],
+    contentList: [
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' },
+      { text: '菜单:' }      
     ]
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
+    var vm = this;
+    wx.getSystemInfo({
+      success: (res) => {
+        vm.setData({
+          deviceWidth: res.windowWidth,
+          deviceHeight: res.windowHeight
+        });
+      }
+    });
   },
   onReady: function () {
     // 页面渲染完成
@@ -106,7 +133,18 @@ Page({
   changeTab: function (e) {
     this.setData({
       activeIndex: e.currentTarget.dataset.index,
-      content:e.currentTarget.dataset.name
+      content: e.currentTarget.dataset.name
     })
+  },
+  getMore: function () {
+    this.setData({
+      contentList: this.data.contentList.concat([
+        { text: '菜单:' },
+        { text: '菜单:' },
+        { text: '菜单:' },
+        { text: '菜单:' },
+        { text: '菜单:' }
+      ])
+    });
   }
 })
