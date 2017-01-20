@@ -5,6 +5,7 @@ Page {
 .container {
   width: 100%;
   display: flex;
+  overflow: hidden;
 }
 
 .left_tabbar {
