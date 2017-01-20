@@ -5,7 +5,7 @@ weui-wxss中的样式还算齐全（<a href="https://github.com/weui/weui-wxss" 
  2. - [x] 弹出层（常用于选择商品属性）
  3. - [x] 订单好中差评价交互
  4. - [x] 富文本解析(项目地址：<a href="https://github.com/icindy/wxParse" target="_blank">https://github.com/icindy/wxParse</a>)
- 5. - [x] 左侧可滑动tab
+ 5. - [ ] 左侧可滑动tabbar（右侧列表在iphone下滑动卡顿-待优化）
  6. - [x] 横向滚动图文
  7. - [x] 省市区三级联动（单页面（小程序的页面层级限制）、多页面两种）
  8. - [x] loading
