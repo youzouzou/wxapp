@@ -1,4 +1,7 @@
 /**
+ * html2Json 改造来自: https://github.com/Jxck/html2json
+ * 
+ * 
  * author: Di (微信小程序开发工程师)
  * organization: WeAppDev(微信小程序开发论坛)(http://weappdev.com)
  *               垂直微信小程序开发交流社区
@@ -13,8 +16,8 @@ var __placeImgeUrlHttps = "https";
 var __emojisReg = '';
 var __emojisBaseSrc = '';
 var __emojis = {};
-var wxDiscode = require('wxDiscode.js');
-var HTMLParser = require('htmlparser.js');
+var wxDiscode = require('./wxDiscode.js');
+var HTMLParser = require('./htmlparser.js');
 // Empty Elements - HTML 5
 var empty = makeMap("area,base,basefont,br,col,frame,hr,img,input,link,meta,param,embed,command,keygen,source,track,wbr");
 // Block Elements - HTML 5
@@ -46,8 +49,8 @@ function q(v) {
 function removeDOCTYPE(html) {
     return html
         .replace(/<\?xml.*\?>\n/, '')
-        .replace(/<!doctype.*\>\n/, '')
-        .replace(/<!DOCTYPE.*\>\n/, '');
+        .replace(/<.*!doctype.*\>\n/, '')
+        .replace(/<.*!DOCTYPE.*\>\n/, '');
 }
 
 
@@ -130,7 +133,11 @@ function html2json(html, bindName) {
                 results.images.push(node);
                 results.imageUrls.push(imgUrl);
             }
-
+            //临时记录source资源
+            if(node.tag === 'source'){
+                results.source = node.attr.src;
+            }
+            
             if (unary) {
                 // if this tag dosen't have end tag
                 // like <img src="hoge.png"/>
@@ -150,6 +157,12 @@ function html2json(html, bindName) {
             var node = bufArray.shift();
             if (node.tag !== tag) console.error('invalid state: mismatch end tag');
 
+            //当有缓存source资源时于于video补上src资源
+            if(node.tag === 'video' && results.source){
+                node.attr.src = results.source;
+                delete result.source;
+            }
+            
             if (bufArray.length === 0) {
                 results.nodes.push(node);
             } else {
@@ -180,15 +193,15 @@ function html2json(html, bindName) {
         },
         comment: function (text) {
             //debug(text);
-            var node = {
-                node: 'comment',
-                text: text,
-            };
-            var parent = bufArray[0];
-            if (parent.nodes === undefined) {
-                parent.nodes = [];
-            }
-            parent.nodes.push(node);
+            // var node = {
+            //     node: 'comment',
+            //     text: text,
+            // };
+            // var parent = bufArray[0];
+            // if (parent.nodes === undefined) {
+            //     parent.nodes = [];
+            // }
+            // parent.nodes.push(node);
         },
     });
     return results;
