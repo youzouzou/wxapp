@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/others/calendar/calendar",
     "pages/others/others",
     "pages/others/commodity_attr/commodity_attr",
-    
+    "pages/others/calendar/calendar",
     "pages/others/waterfall/waterfall",
     "pages/others/toast/toast",
     "pages/others/pictures/pictures",
