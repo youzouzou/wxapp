@@ -50,14 +50,24 @@ Page({
     var weekIndex = 0;//第几个星期
     for (var i = 0; i < vm.data.daysCountArr[mon]; i++) {
       var week = new Date(y + '-' + (mon + 1) + '-' + (i + 1)).getDay();
-      dateList[weekIndex].push({
-        value: y + '-' + (mon + 1) + '-' + (i + 1),
-        date: i + 1,
-        week: week
-      });
+      // 如果是新的一周，则新增一周
       if (week == 0) {
         weekIndex++;
         dateList[weekIndex] = [];
+      }
+      // 如果是第一行，则将该行日期倒序，以便配合样式居右显示
+      if (weekIndex == 0) {
+        dateList[weekIndex].unshift({
+          value: y + '-' + (mon + 1) + '-' + (i + 1),
+          date: i + 1,
+          week: week
+        });
+      } else {
+        dateList[weekIndex].push({
+          value: y + '-' + (mon + 1) + '-' + (i + 1),
+          date: i + 1,
+          week: week
+        });
       }
     }
     // console.log('本月日期', dateList);

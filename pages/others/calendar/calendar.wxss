@@ -20,19 +20,19 @@
   background: #fff;
   overflow: hidden;
   border-bottom: 1rpx solid #ececec;
-  display: flex;
 }
 
 .weekday_label {
   width: 14.28%;
   float: left;
+  display: block;
   text-align: center;
   font-size: 26rpx;
   padding: 10rpx 0;
 }
 
 .weekday_label>text {
-  width:50rpx;
+  width: 50rpx;
   height: 50rpx;
   line-height: 50rpx;
   display: inline-block;
@@ -52,4 +52,8 @@
 .show_box {
   padding: 20rpx;
   font-size: 26rpx;
+}
+
+.calendar_box:nth-child(2) .weekday_label{
+  float: right;
 }
