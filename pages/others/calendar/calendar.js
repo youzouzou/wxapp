@@ -49,7 +49,7 @@ Page({
     dateList[0] = [];
     var weekIndex = 0;//第几个星期
     for (var i = 0; i < vm.data.daysCountArr[mon]; i++) {
-      var week = new Date(y + '-' + (mon + 1) + '-' + (i + 1)).getDay();
+      var week = new Date(y, mon, (i + 1)).getDay();
       // 如果是新的一周，则新增一周
       if (week == 0) {
         weekIndex++;
