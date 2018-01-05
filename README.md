@@ -17,7 +17,7 @@ weui-wxss中的样式还算齐全（<a href="https://github.com/weui/weui-wxss" 
  14. - [x] 横向可滑动tabbar
  15. - [x] 图片翻页动画
  16. - [x] 瀑布流图文
- 17. - [ ] 自定义日历（ios有兼容问题，未解决，慎用！最近准备考试去了，可能得有一阵子才能回来改了，唉心塞抱歉啊）
+ 17. - [ ] 自定义日历（ios有兼容问题，未解决，慎用！隐居中。。。手头暂无iphone，后续再测）
  18. - [x] 商品属性值联动
 
 PS：欢迎探讨交流~（博客<a href="http://blog.csdn.net/qq_24734285" target="_blank">http://blog.csdn.net/qq_24734285</a>）
