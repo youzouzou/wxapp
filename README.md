@@ -25,4 +25,4 @@ PS：欢迎探讨交流~
 博客：<a href="http://blog.csdn.net/qq_24734285" target="_blank">http://blog.csdn.net/qq_24734285</a>
 
 公众号：程序员生存指北
-<img src="https://github.com/youzouzou/wxapp/blob/master/qrcode_for_gh_db982f8a6bd5_344.jpg">
+<img src="qrcode_for_gh_db982f8a6bd5_344.jpg">
